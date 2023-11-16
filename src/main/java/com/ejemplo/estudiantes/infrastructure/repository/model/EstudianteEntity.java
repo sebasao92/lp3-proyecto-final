@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity(name = "estudiante")
-@Data
-@Builder
-@NoArgsConstructor //Agrega el constructor que tiene parametros
-@AllArgsConstructor //Agrega el constructor que recibe TODOS los parametros
+@Data // Agrega los getters, setters, equals, hashcode, toString a la clase
+@Builder //Agrega el builder a la clase
+@NoArgsConstructor //Agrega el constructor que no tiene parámetros
+@AllArgsConstructor //Agrega el constructor que recibe TODOS los parámetros
 public class EstudianteEntity {
 
     @Id
