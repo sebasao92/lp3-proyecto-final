@@ -17,6 +17,10 @@ public class CreacionEstudianteController {
 
     private final CreacionEstudianteService creacionEstudianteService;
 
+    /**
+     * Permite la creación de un estudiante a través del método HTTP POST
+     * Recibe como body en el request HTTP un JSON con la información del estudiante.
+     **/
     @PostMapping
     public Estudiante crearEstudiante(@RequestBody Estudiante estudiante) {
         log.info("Se va crear un estudiante");

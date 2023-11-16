@@ -16,6 +16,10 @@ public class EliminacionEstudianteController {
 
     private final EliminacionEstudianteService eliminacionEstudianteService;
 
+    /**
+     * Permite la eliminación de un estudiante a través del método HTTP DELETE
+     * Recibe el ID del estudiante en el path. (No requiere body)
+     **/
     @DeleteMapping("{id}")
     public void eliminarEstudiante(@PathVariable("id") Long estudianteId){
         eliminacionEstudianteService.eliminarEstudiante(estudianteId);
